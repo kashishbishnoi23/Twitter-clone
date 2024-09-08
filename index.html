@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html class="border-box p-0 m-0 w-full overflow-x-hidden min-w-[100vw]" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter clone</title>
+
+    <link rel="stylesheet" href="src/output.css">
+</head>
+
+<body class="m-0 p-0">
+
+
+
+    <div class="main flex bg-black text-white min-w-[100vw]">
+
+        <div class="left flex justify-end border border-grey  md:w-[17%] md:h-screen md:sticky md:top-0 max-md:fixed max-md:bottom-0 max-md:w-full max-md:bg-black max-md:justify-evenly z-10">
+
+            <div class="flex md:flex-col md:pr-4 justify-around  h-full w-fit items-center max-md:w-full ">
+
+                <div class="max-md:flex max-md:flex-row max-md:justify-evenly max-md:w-full " >
+                    <div class="logo hover:bg-zinc-900 p-3  rounded-full border-zinc-900 max-md:hidden ">
+                        <svg class="w-7 invert" viewBox="0 0 24 24" aria-hidden="true"
+                            class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-16y2uox r-lwhw9o">
+                            <g>
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="item  hover:bg-zinc-900 p-3  rounded-full border-zinc-900">
+                        <div class="icon">
+                            <svg width="28" width="28" viewBox="0 0 24 24" aria-hidden="true"
+                                class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                                <g>
+                                    <path
+                                        d="M21.591 7.146L12.52 1.157c-.316-.21-.724-.21-1.04 0l-9.071 5.99c-.26.173-.409.456-.409.757v13.183c0 .502.418.913.929.913H9.14c.51 0 .929-.41.929-.913v-7.075h3.909v7.075c0 .502.417.913.928.913h6.165c.511 0 .929-.41.929-.913V7.904c0-.301-.158-.584-.408-.758z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+
+                    </div>
+
+                    <div class="item hover:bg-zinc-900 p-3 border-zinc-900 rounded-full ">
+                        <div class="icon">
+                            <svg width="28" viewBox="0 0 24 24" aria-hidden="true"
+                                class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                                <g>
+                                    <path
+                                        d="M10.25 3.75c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5c1.795 0 3.419-.726 4.596-1.904 1.178-1.177 1.904-2.801 1.904-4.596 0-3.59-2.91-6.5-6.5-6.5zm-8.5 6.5c0-4.694 3.806-8.5 8.5-8.5s8.5 3.806 8.5 8.5c0 1.986-.682 3.815-1.824 5.262l4.781 4.781-1.414 1.414-4.781-4.781c-1.447 1.142-3.276 1.824-5.262 1.824-4.694 0-8.5-3.806-8.5-8.5z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+
+                    </div>
+
+                    <div class="item  hover:bg-zinc-900 p-3 border-zinc-900 rounded-full ">
+                        <div class="icon">
+                            <svg width="28" viewBox="0 0 24 24" aria-hidden="true"
+                                class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                                <g>
+                                    <path
+                                        d="M19.993 9.042C19.48 5.017 16.054 2 11.996 2s-7.49 3.021-7.999 7.051L2.866 18H7.1c.463 2.282 2.481 4 4.9 4s4.437-1.718 4.9-4h4.236l-1.143-8.958zM12 20c-1.306 0-2.417-.835-2.829-2h5.658c-.412 1.165-1.523 2-2.829 2zm-6.866-4l.847-6.698C6.364 6.272 8.941 4 11.996 4s5.627 2.268 6.013 5.295L18.864 16H5.134z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+
+                    </div>
+                    <div class="item  hover:bg-zinc-900 p-3 border-zinc-900 rounded-full ">
+                        <div class="icon">
+                            <svg width="28" viewBox="0 0 24 24" aria-hidden="true"
+                                class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                                <g>
+                                    <g clip-path="url(#1-clip0_2592_269)" clip-rule="evenodd">
+                                        <path
+                                            d="M18 4.1H6c-1.05 0-1.9.85-1.9 1.9v12c0 1.05.85 1.9 1.9 1.9h12c1.05 0 1.9-.85 1.9-1.9V6c0-1.05-.85-1.9-1.9-1.9zM6 2h12c2.21 0 4 1.79 4 4v12c0 2.21-1.79 4-4 4H6c-2.21 0-4-1.79-4-4V6c0-2.21 1.79-4 4-4z">
+                                        </path>
+                                        <path d="M6.68 17.8l8.108-11.58h2.532L9.21 17.8H6.68z"></path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="1-clip0_2592_269">
+                                            <rect height="20" rx="1" width="20" x="2" y="2"></rect>
+                                        </clipPath>
+                                    </defs>
+                                </g>
+                            </svg>
+                        </div>
+
+                    </div>
+                    <div class="item  hover:bg-zinc-900 p-3 border-zinc-900 rounded-full ">
+                        <div class="icon">
+                            <svg width="28" viewBox="0 0 24 24" aria-hidden="true"
+                                class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                                <g>
+                                    <path
+                                        d="M1.998 4.499c0-.828.671-1.499 1.5-1.499h17c.828 0 1.5.671 1.5 1.499v2.858l-10 4.545-10-4.547V4.499zm0 5.053V19.5c0 .828.671 1.5 1.5 1.5h17c.828 0 1.5-.672 1.5-1.5V9.554l-10 4.545-10-4.547z">
+                                    </path>
+                                </g>
+                            </svg>
+
+                        </div>
+
+                    </div>
+
+                    <div class="item  hover:bg-zinc-900 p-3 border-zinc-900 rounded-full ">
+                        <div class="icon">
+                            <svg width="28" viewBox="0 0 24 24" aria-hidden="true"
+                                class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                                <g>
+                                    <path
+                                        d="M5.651 19h12.698c-.337-1.8-1.023-3.21-1.945-4.19C15.318 13.65 13.838 13 12 13s-3.317.65-4.404 1.81c-.922.98-1.608 2.39-1.945 4.19zm.486-5.56C7.627 11.85 9.648 11 12 11s4.373.85 5.863 2.44c1.477 1.58 2.366 3.8 2.632 6.46l.11 1.1H3.395l.11-1.1c.266-2.66 1.155-4.88 2.632-6.46zM12 4c-1.105 0-2 .9-2 2s.895 2 2 2 2-.9 2-2-.895-2-2-2zM8 6c0-2.21 1.791-4 4-4s4 1.79 4 4-1.791 4-4 4-4-1.79-4-4z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+
+                    </div>
+
+                    <div class="item  hover:bg-zinc-900 p-3 border-zinc-900 rounded-full max-md:hidden">
+                        <div class="icon">
+                            <svg width="28" viewBox="0 0 24 24" aria-hidden="true"
+                                class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                                <g>
+                                    <path
+                                        d="M3.75 12c0-4.56 3.69-8.25 8.25-8.25s8.25 3.69 8.25 8.25-3.69 8.25-8.25 8.25S3.75 16.56 3.75 12zM12 1.75C6.34 1.75 1.75 6.34 1.75 12S6.34 22.25 12 22.25 22.25 17.66 22.25 12 17.66 1.75 12 1.75zm-4.75 11.5c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25S6 11.31 6 12s.56 1.25 1.25 1.25zm9.5 0c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25-1.25.56-1.25 1.25.56 1.25 1.25 1.25zM13.25 12c0 .69-.56 1.25-1.25 1.25s-1.25-.56-1.25-1.25.56-1.25 1.25-1.25 1.25.56 1.25 1.25z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+
+                    </div>
+
+                    <button class="bg-blue p-3 border border-blue rounded-full max-md:fixed max-md:bottom-20 max-md:right-10">
+                        <svg class="invert h-7" width="28" viewBox="0 0 24 24" aria-hidden="true"
+                            class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1472mwg r-lrsllp"
+                            style="color: rgb(255, 255, 255);">
+                            <g>
+                                <path
+                                    d="M23 3c-6.62-.1-10.38 2.421-13.05 6.03C7.29 12.61 6 17.331 6 22h2c0-1.007.07-2.012.19-3H12c4.1 0 7.48-3.082 7.94-7.054C22.79 10.147 23.17 6.359 23 3zm-7 8h-1.5v2H16c.63-.016 1.2-.08 1.72-.188C16.95 15.24 14.68 17 12 17H8.55c.57-2.512 1.57-4.851 3-6.78 2.16-2.912 5.29-4.911 9.45-5.187C20.95 8.079 19.9 11 16 11zM4 9V6H1V4h3V1h2v3h3v2H6v3H4z">
+                                </path>
+                            </g>
+                        </svg>
+
+                    </button>
+
+
+
+                </div>
+
+                <button class="hover:bg-zinc-900 p-3 border-zinc-900 rounded-full max-md:hidden">
+                    <img class="object-cover  profile-icon  " src="images/taylor.jpg" alt="">
+                </button>
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+
+
+        <div class="center box-border border-grey w-[54%] max-lg:w-[100%]">
+
+            <div class="header  w-full  h-[9vh] max-md:h-[22vh] sticky top-0 bg-black/50  border-b border-grey">
+
+                <div class="flex md:hidden h-[50%] w-full items-center justify-around">
+                    <button class="hover:bg-zinc-900 p-3 border-zinc-900 rounded-full md:hidden">
+                        <img class="object-cover  profile-icon max-md:h-[40px] max-md:w-[40px]" src="images/taylor.jpg" alt="">
+                    </button>
+                    
+                    <div class="logo hover:bg-zinc-900 p-3  rounded-full border-zinc-900 md:hidden ">
+                        <svg class="w-7 invert" viewBox="0 0 24 24" aria-hidden="true"
+                            class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-16y2uox r-lwhw9o">
+                            <g>
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                    
+                    <button class="text-blue">Get Premium</button>
+                </div>
+
+                <div class="flex h-full max-md:h-[50%]">
+                <div class="w-[50%] h-full md:border-r md:border-grey flex flex-col  items-center justify-between pt-3 hover:bg-zinc-900">
+                    <div class="font-bold">For you </div>
+                    <div class="blue h-1 w-[18%] rounded-sm"></div>
+                </div>
+
+
+                <div class="w-[50%] md:h-full  opacity-50 hover:bg-zinc-900 text-center pt-3">
+                    <div>Following </div>
+                </div>
+                </div>
+
+            </div>
+
+            <!-- what is happening -->
+
+            <div class="whathappen h-[28vh] w-full flex gap-2 max-md:w-[90%] max-[540px]:hidden">
+                <div>
+                    <img src="images/taylor.jpg" class="profile-icon self-start m-4" alt="">
+                </div>
+
+                <div class="flex flex-col justify-evenly w-full ">
+
+                    <!-- Input -->
+                    <input class="text-xl placeholder-grey focus:outline-none bg-black " type="text"
+                        placeholder="What is happening?!">
+
+                    <!-- Everyone can reply -->
+                    <div class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="24px"
+                            fill="#1D9BF0">
+                            <path
+                                d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-40-82v-78q-33 0-56.5-23.5T360-320v-40L168-552q-3 18-5.5 36t-2.5 36q0 121 79.5 212T440-162Zm276-102q20-22 36-47.5t26.5-53q10.5-27.5 16-56.5t5.5-59q0-98-54.5-179T600-776v16q0 33-23.5 56.5T520-680h-80v80q0 17-11.5 28.5T400-560h-80v80h240q17 0 28.5 11.5T600-440v120h40q26 0 47 15.5t29 40.5Z" />
+                        </svg>
+                        <div class="text-sm font-semibold text-blue">Everyone can reply</div>
+                    </div>
+
+                    <hr class="border-grey">
+
+                    <!-- Icons -->
+                    <div class="flex justify-between pr-10">
+
+                        <div class="flex gap-3">
+
+                            <button class="hover:bg-icon_bg  border-icon_bg rounded-full p-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#1D9BF0">
+                                    <path
+                                        d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm40-80h480L570-480 450-320l-90-120-120 160Zm-40 80v-560 560Z" />
+                                </svg>
+                            </button>
+
+
+                            <button class="hover:bg-icon_bg  border-icon_bg rounded-full p-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#1D9BF0">
+                                    <path
+                                        d="M340-400h40q17 0 28.5-11.5T420-440v-40h-40v40h-40v-80h80q0-17-11.5-28.5T380-560h-40q-17 0-28.5 11.5T300-520v80q0 17 11.5 28.5T340-400Zm120 0h40v-160h-40v160Zm80 0h40v-60h60v-40h-60v-20h80v-40H540v160ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z" />
+                                </svg>
+                            </button>
+
+                            <button class="hover:bg-icon_bg  border-icon_bg rounded-full p-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#1D9BF0">
+                                    <path
+                                        d="M280-280h80v-200h-80v200Zm320 0h80v-400h-80v400Zm-160 0h80v-120h-80v120Zm0-200h80v-80h-80v80ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z" />
+                                </svg>
+                            </button>
+
+                            <button class="hover:bg-icon_bg  border-icon_bg rounded-full p-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#1D9BF0">
+                                    <path
+                                        d="M620-520q25 0 42.5-17.5T680-580q0-25-17.5-42.5T620-640q-25 0-42.5 17.5T560-580q0 25 17.5 42.5T620-520Zm-280 0q25 0 42.5-17.5T400-580q0-25-17.5-42.5T340-640q-25 0-42.5 17.5T280-580q0 25 17.5 42.5T340-520Zm140 260q68 0 123.5-38.5T684-400H276q25 63 80.5 101.5T480-260Zm0 180q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Z" />
+                                </svg>
+                            </button>
+
+                            <button class="hover:bg-icon_bg  border-icon_bg rounded-full p-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#1D9BF0">
+                                    <path
+                                        d="M680-80q-83 0-141.5-58.5T480-280q0-83 58.5-141.5T680-480q83 0 141.5 58.5T880-280q0 83-58.5 141.5T680-80Zm67-105 28-28-75-75v-112h-40v128l87 87Zm-547 65q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h167q11-35 43-57.5t70-22.5q40 0 71.5 22.5T594-840h166q33 0 56.5 23.5T840-760v250q-18-13-38-22t-42-16v-212h-80v120H280v-120h-80v560h212q7 22 16 42t22 38H200Zm280-640q17 0 28.5-11.5T520-800q0-17-11.5-28.5T480-840q-17 0-28.5 11.5T440-800q0 17 11.5 28.5T480-760Z" />
+                                </svg>
+                            </button>
+
+                            <button>
+                                <svg class="opacity-50  cursor-not-allowed pointer-events-none"
+                                    xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#1D9BF0">
+                                    <path
+                                        d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z" />
+                                </svg>
+                            </button>
+
+
+                        </div>
+
+                        <div class="opacity-50">
+                            <button class="bg-blue font-bold pl-5 pr-5 pt-2 pb-2 border-blue rounded-3xl">
+                                Post
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="text-blue text-md border-b border-t border-grey p-3 text-center hover:bg-hover_bg max-[540px]:hidden">
+                Show 112 posts
+            </div>
+
+            <!-- tweet -->
+
+            <div class="tweet w-full flex p-3 pt-2 gap-1 hover:bg-hover_bg ">
+                <img class="profile-icon object-cover" src="images/elon.webp" alt="Elon Musk">
+
+                <div class="content w-full flex flex-col gap-3">
+
+                    <div class="flex items-center w-full justify-between max-[381px]:pr-5">
+
+                        <div class="flex items-center w-full gap-1 max-[381px]:flex-col ">
+                            <div class="flex items-center gap-1">
+                            <div class="font-bold text-md">Elon Musk </div>
+                            <img class="w-4" src="images/pngwing.com.png" alt="">
+                            </div>
+                            <div class="logo invert max-[381px]:hidden">
+                                <svg class="w-3" width="28" viewBox="0 0 24 24" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-16y2uox r-lwhw9o">
+                                    <g>
+                                        <path
+                                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <div class="text-grey">@elonmusk . 21h</div>
+                        </div>
+
+                        <svg class="p-2  hover:fill-blue hover:bg-icon_bg hover:rounded-full" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                            fill="#5f6368">
+                            <path
+                                d="M263.79-408Q234-408 213-429.21t-21-51Q192-510 213.21-531t51-21Q294-552 315-530.79t21 51Q336-450 314.79-429t-51 21Zm216 0Q450-408 429-429.21t-21-51Q408-510 429.21-531t51-21Q510-552 531-530.79t21 51Q552-450 530.79-429t-51 21Zm216 0Q666-408 645-429.21t-21-51Q624-510 645.21-531t51-21Q726-552 747-530.79t21 51Q768-450 746.79-429t-51 21Z" />
+                        </svg>
+
+                    </div>
+
+                    <div class="flex flex-col gap-4">
+                        <div>I have never been materially active in politics before, but this time I think civilization as we know it is on the line. </div>
+                        <div>If we want to preserve freedom and a meritocracy in America, then Trump must win. </div>
+
+                    </div>
+
+                    <div class="box flex w-full border border-grey rounded-2xl p-3 gap-2 bg-lightgrey hover:bg-hover_bg">
+                        <img class="profile-icon object-cover"
+                            src="images/shaun.jpg"
+                            alt="shaun">
+
+                        <div class="flex flex-col content gap-1">
+                            <div class=" flex gap-1 items-center">
+                                <div class="font-bold text-md">Shaun Maguire </div>
+                                <img class="w-4 h-4" src="images/pngwing.com.png" alt="">
+                              
+                                <div class="text-grey">@shaunmaguire . 15h</div>
+
+
+                            </div>
+
+                            <div class="flex flex-col gap-4">
+
+
+                                <p>
+                                    Elon is one of the best in the world at synthesizing complex information and
+                                    seeing a path forwards.
+                                </p>
+
+
+                                <p>
+                                    He is not always right -- as none of us are -- but he has an incredible track record
+                                    of seeing non-obvious things years ahead of others...
+                                </p>
+                            </div>
+
+
+                            <div class="text-blue">Show More</div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- like, share etc icons -->
+
+                    <div class="flex justify-between pr-2 w-full">
+
+                        <div class="flex justify-between w-[85%]">
+
+                            <button class="group flex items-center">
+
+                                <svg class="h-9 w-9 p-2  group-hover:bg-icon_bg  border-icon_bg rounded-full    group-hover:fill-blue"
+                                    fill="grey" viewBox="0 0 24 24" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi">
+                                    <g>
+                                        <path
+                                            d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z">
+                                        </path>
+                                    </g>
+                                </svg>
+
+
+                                <span class="text-grey relative right-1 text-sm group-hover:text-blue">154</span>
+
+
+                            </button>   
+
+                            <button class="group flex items-center">
+                                    <svg class="h-9 w-9 p-2  group-hover:bg-icon_bg  border-icon_bg rounded-full   group-hover:fill-blue" fill="grey" viewBox="0 0 24 24" aria-hidden="true"
+                                        class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi">
+                                        <g>
+                                            <path
+                                                d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                <span class="text-grey relative right-1 text-sm group-hover:text-blue">283</span>
+
+                                </button>
+
+
+                            <button class="group flex items-center">
+                                    <svg class="h-9 w-9 p-2  group-hover:bg-icon_bg  border-icon_bg rounded-full   group-hover:fill-blue"  fill="grey" viewBox="0 0 24 24" aria-hidden="true"
+                                        class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi">
+                                        <g>
+                                            <path
+                                                d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                <span class="text-grey relative right-1 text-sm group-hover:text-blue">6.5K</span>
+
+                                </button>
+
+                            
+
+                            <button class="group flex items-center">
+                                    <svg class="h-9 w-9 p-2  group-hover:bg-icon_bg  border-icon_bg rounded-full   group-hover:fill-blue" fill="grey" viewBox="0 0 24 24" aria-hidden="true"
+                                        class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi">
+                                        <g>
+                                            <path
+                                                d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                <span class="text-grey relative right-1 text-sm group-hover:text-blue" >498K</span>
+
+                                </button>
+
+
+                        </div>
+
+                        <div class="flex gap-3">
+                            <button class="h-5 w-5 group">
+                                <svg class="h-9 w-9 p-2  group-hover:bg-icon_bg  border-icon_bg rounded-full   group-hover:fill-blue"  fill="grey" viewBox="0 0 24 24" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi">
+                                    <g>
+                                        <path
+                                            d="M4 4.5C4 3.12 5.119 2 6.5 2h11C18.881 2 20 3.12 20 4.5v18.44l-8-5.71-8 5.71V4.5zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V4.5c0-.28-.224-.5-.5-.5h-11z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </button>
+                            <button class="h-5 w-5 group">
+                                <svg class="h-9 w-9 p-2  group-hover:bg-icon_bg  border-icon_bg rounded-full   group-hover:fill-blue"fill="grey" viewBox="0 0 24 24" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi">
+                                    <g>
+                                        <path
+                                            d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+
+
+            <!-- post -->
+
+            <div class="post border-t border-grey flex  items-center gap-1 pt-0 p-3 hover:bg-hover_bg ">
+
+                <img class="self-start mt-2 profile-icon" src="images/doggy.jpg" alt="">
+
+                <div class="content flex flex-col w-full">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-1">
+                            <div class="font-bold text-md">DogeDesigner</div>
+                            <img class="w-4 h-4" src="images/pngwing.com.png" alt="">
+                            <img width="20" class="object-cover" src="images/dog2.png" alt="">
+                            <div class="text-grey">@cb_doge . Sep 4</div>
+                        </div>
+                        <svg class="p-2 hover:fill-blue hover:bg-icon_bg hover:rounded-full" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                        fill="#5f6368">
+                        <path
+                            d="M263.79-408Q234-408 213-429.21t-21-51Q192-510 213.21-531t51-21Q294-552 315-530.79t21 51Q336-450 314.79-429t-51 21Zm216 0Q450-408 429-429.21t-21-51Q408-510 429.21-531t51-21Q510-552 531-530.79t21 51Q552-450 530.79-429t-51 21Zm216 0Q666-408 645-429.21t-21-51Q624-510 645.21-531t51-21Q726-552 747-530.79t21 51Q768-450 746.79-429t-51 21Z" />
+                    </svg>
+                    </div>
+
+                    <div class="flex flex-col gap-3">
+
+                        <div>Haters will say, it's edited! </div>
+
+                        <div class="video w-full h-[50vh]">
+                            <video class="w-full h-full  border border-black rounded-xl" controls autoplay>
+                                <source src="videos/Jjkm71VS_QRjWT3p.mp4" type="video/mp4">
+                            </video>
+
+                        </div>
+
+                        <!-- likes, share etc -->
+                        <div class="flex justify-between pr-2 w-full">
+
+                            <div class="flex justify-between w-[85%]">
+    
+                                <button class="group flex items-center">
+    
+                                    <svg class="h-9 w-9 p-2  group-hover:bg-icon_bg  border-icon_bg rounded-full    group-hover:fill-blue"
+                                        fill="grey" viewBox="0 0 24 24" aria-hidden="true"
+                                        class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi">
+                                        <g>
+                                            <path
+                                                d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z">
+                                            </path>
+                                        </g>
+                                    </svg>
+    
+    
+                                    <span class="text-grey relative right-1 text-sm group-hover:text-blue">154</span>
+    
+    
+                                </button>   
+    
+                                <button class="group flex items-center">
+                                        <svg class="h-9 w-9 p-2  group-hover:bg-icon_bg  border-icon_bg rounded-full   group-hover:fill-blue" fill="grey" viewBox="0 0 24 24" aria-hidden="true"
+                                            class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi">
+                                            <g>
+                                                <path
+                                                    d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    <span class="text-grey relative right-1 text-sm group-hover:text-blue">283</span>
+    
+                                    </button>
+    
+    
+                                <button class="group flex items-center">
+                                        <svg class="h-9 w-9 p-2  group-hover:bg-icon_bg  border-icon_bg rounded-full   group-hover:fill-blue"  fill="grey" viewBox="0 0 24 24" aria-hidden="true"
+                                            class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi">
+                                            <g>
+                                                <path
+                                                    d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    <span class="text-grey relative right-1 text-sm group-hover:text-blue">6.5K</span>
+    
+                                    </button>
+    
+                                
+    
+                                <button class="group flex items-center">
+                                        <svg class="h-9 w-9 p-2  group-hover:bg-icon_bg  border-icon_bg rounded-full   group-hover:fill-blue" fill="grey" viewBox="0 0 24 24" aria-hidden="true"
+                                            class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi">
+                                            <g>
+                                                <path
+                                                    d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    <span class="text-grey relative right-1 text-sm group-hover:text-blue" >498K</span>
+    
+                                    </button>
+    
+    
+                            </div>
+    
+                            <div class="flex gap-3">
+                                <button class="h-5 w-5 group">
+                                    <svg class="h-9 w-9 p-2  group-hover:bg-icon_bg  border-icon_bg rounded-full   group-hover:fill-blue"  fill="grey" viewBox="0 0 24 24" aria-hidden="true"
+                                        class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi">
+                                        <g>
+                                            <path
+                                                d="M4 4.5C4 3.12 5.119 2 6.5 2h11C18.881 2 20 3.12 20 4.5v18.44l-8-5.71-8 5.71V4.5zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V4.5c0-.28-.224-.5-.5-.5h-11z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </button>
+                                <button class="h-5 w-5 group">
+                                    <svg class="h-9 w-9 p-2  group-hover:bg-icon_bg  border-icon_bg rounded-full   group-hover:fill-blue"fill="grey" viewBox="0 0 24 24" aria-hidden="true"
+                                        class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi">
+                                        <g>
+                                            <path
+                                                d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <hr class="border border-grey">
+        </div>
+
+
+
+
+
+
+
+        <div class="right border box-border border-grey w-[40%] pl-10 pb-20 max-lg:hidden">
+
+            <div class=" flex flex-col justify-between gap-4 w-[75%] max-lg:w-[90%]">
+                <!-- search -->
+            <div class="bg-black sticky top-0 pt-1 pb-1">
+                <div class="search-container sticky top-3 flex gap-3 p-3 items-center bg-search focus-within:border-blue focus-within:bg-black w-full  border border-search rounded-full">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                        fill="#5f6368">
+                        <path
+                            d="M765-144 526-383q-30 22-65.79 34.5-35.79 12.5-76.18 12.5Q284-336 214-406t-70-170q0-100 70-170t170-70q100 0 170 70t70 170.03q0 40.39-12.5 76.18Q599-464 577-434l239 239-51 51ZM384-408q70 0 119-49t49-119q0-70-49-119t-119-49q-70 0-119 49t-49 119q0 70 49 119t119 49Z"/>
+                    </svg>
+                    <input type="text" placeholder="Search" class="focus:outline-none focus:bg-black bg-search placeholder-searchtext text-sm">
+                </div>
+            </div>
+
+                <!-- subscribe to premium -->
+                <div class="subscribe border rounded-xl border-grey p-3 gap-2 flex flex-col">
+                    <div class="font-bold text-xl">Subscribe to Premium</div>
+                    <div>Subscribe to unlock new features and if eligible,recieve a share of ads revenue.</div>
+                    <button name="subscribe" class="bg-blue text-sm font-bold pt-2 pb-2 w-[35%] rounded-full hover:opacity-90">Subscribe</button>
+                </div>
+
+                <!-- what's happenening -->
+
+                <div class="happening w-full  flex flex-col border rounded-xl border-grey pt-5">
+                    <h3 class="font-bold text-xl pr-5 pl-5 pb-2">What's happenening</h3>
+
+                    <button class="happen w-full flex pt-2 pb-2 pr-4 pl-4 justify-between hover:bg-zinc-900 ">
+                        <div class="flex flex-col items-start">
+                            <div>Entertainment · Trending</div>
+                            <div>#DeputyCM</div>
+                            <div>Trending with <span class="trending">#EDRaid </span></div>
+                        </div>
+
+                        <svg class="p-2 hover:fill-blue hover:bg-icon_bg hover:rounded-full" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                        fill="#5f6368">
+                        <path
+                            d="M263.79-408Q234-408 213-429.21t-21-51Q192-510 213.21-531t51-21Q294-552 315-530.79t21 51Q336-450 314.79-429t-51 21Zm216 0Q450-408 429-429.21t-21-51Q408-510 429.21-531t51-21Q510-552 531-530.79t21 51Q552-450 530.79-429t-51 21Zm216 0Q666-408 645-429.21t-21-51Q624-510 645.21-531t51-21Q726-552 747-530.79t21 51Q768-450 746.79-429t-51 21Z" />
+                    </svg>
+
+                    </button>
+
+                    <button class="happen w-full flex pt-2 pb-2 pr-4 pl-4 justify-between hover:bg-zinc-900 ">
+
+                        <div class="flex flex-col items-start">
+                            <div>Sports · Trending</div>
+                            <div>#MSDhoni</div>
+                            <div>Trending with <span class="trending">#Yuvraj Singh </span></div>
+                        </div>
+
+                        <svg class="p-2 hover:fill-blue hover:bg-icon_bg hover:rounded-full" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                        fill="#5f6368">
+                        <path
+                            d="M263.79-408Q234-408 213-429.21t-21-51Q192-510 213.21-531t51-21Q294-552 315-530.79t21 51Q336-450 314.79-429t-51 21Zm216 0Q450-408 429-429.21t-21-51Q408-510 429.21-531t51-21Q510-552 531-530.79t21 51Q552-450 530.79-429t-51 21Zm216 0Q666-408 645-429.21t-21-51Q624-510 645.21-531t51-21Q726-552 747-530.79t21 51Q768-450 746.79-429t-51 21Z" />
+                    </svg>
+
+
+                    </button>
+
+                    <button class="happen w-full flex pt-2 pb-2 pr-4 pl-4 justify-between hover:bg-zinc-900 ">
+
+                        <div class="flex flex-col items-start">
+                            <div>Entertainment · Trending</div>
+                            <div>#HappyBirthdayPawanaKalyan</div>
+                            <div>Trending with <span class="trending">#Powerstar </span></div>
+                        </div>
+
+                        <svg class="p-2 hover:fill-blue hover:bg-icon_bg hover:rounded-full" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                        fill="#5f6368">
+                        <path
+                            d="M263.79-408Q234-408 213-429.21t-21-51Q192-510 213.21-531t51-21Q294-552 315-530.79t21 51Q336-450 314.79-429t-51 21Zm216 0Q450-408 429-429.21t-21-51Q408-510 429.21-531t51-21Q510-552 531-530.79t21 51Q552-450 530.79-429t-51 21Zm216 0Q666-408 645-429.21t-21-51Q624-510 645.21-531t51-21Q726-552 747-530.79t21 51Q768-450 746.79-429t-51 21Z" />
+                    </svg>
+                    </button>
+
+                    <button class="happen w-full flex pt-2 pb-3 pr-4 pl-4 justify-between hover:bg-zinc-900 ">
+                        <div class="flex flex-col items-start">
+                            <div>Entertainment · Trending</div>
+                            <div>#BhulBhulaiya</div>
+                        </div>
+
+                        <svg class="p-2 hover:fill-blue hover:bg-icon_bg hover:rounded-full" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                            fill="#5f6368">
+                            <path
+                                d="M263.79-408Q234-408 213-429.21t-21-51Q192-510 213.21-531t51-21Q294-552 315-530.79t21 51Q336-450 314.79-429t-51 21Zm216 0Q450-408 429-429.21t-21-51Q408-510 429.21-531t51-21Q510-552 531-530.79t21 51Q552-450 530.79-429t-51 21Zm216 0Q666-408 645-429.21t-21-51Q624-510 645.21-531t51-21Q726-552 747-530.79t21 51Q768-450 746.79-429t-51 21Z" />
+                        </svg>
+
+                    </button>
+
+                    <button class="happen w-full flex pt-2 pb-2 pr-4 pl-4 justify-between hover:bg-zinc-900 ">
+                        <div class="flex flex-col items-start">
+                            <div>Trending in India</div>
+                            <div>#BigBreaking</div>
+                            <div>11.1K posts</div>
+                        </div>
+                        <svg class="p-2 hover:fill-blue hover:bg-icon_bg hover:rounded-full" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                        fill="#5f6368">
+                        <path
+                            d="M263.79-408Q234-408 213-429.21t-21-51Q192-510 213.21-531t51-21Q294-552 315-530.79t21 51Q336-450 314.79-429t-51 21Zm216 0Q450-408 429-429.21t-21-51Q408-510 429.21-531t51-21Q510-552 531-530.79t21 51Q552-450 530.79-429t-51 21Zm216 0Q666-408 645-429.21t-21-51Q624-510 645.21-531t51-21Q726-552 747-530.79t21 51Q768-450 746.79-429t-51 21Z" />
+                    </svg>
+
+                    </button>
+
+                    <button
+                        class="text-blue flex justify-start p-4 hover:bg-zinc-900 rounded-bl-xl rounded-br-xl">
+                        <a href="#">Show more </a>
+                    </button>
+
+                </div>
+
+                <!-- Who to follow -->
+                <div class="whotofollow border border-grey rounded-xl flex flex-col pt-5">
+                    <h3 class="font-bold text-xl pr-5 pl-5 pb-2">Who to follow</h3>
+
+                    <div class="flex justify-between hover:bg-zinc-900 pt-2 pb-2 pr-4 pl-4">
+
+                        <div class="flex items-center gap-3">
+                            <img width="42" src="images/bbc2.webp">
+
+                            <div class="flex flex-col">
+                                <a href="#" class="font-bold">BCCI</a>
+                                <a href="#" class="text-sm text-grey">#Breaking News</a>
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <button class="follow-btn">Follow</button>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between hover:bg-zinc-900 pt-2 pb-2 pr-4 pl-4">
+
+                        <div class="flex items-center gap-3">
+                            <img class="profile-icon" width="50" src="images/modi.jpg">
+
+                            <div class="flex flex-col">
+                                <a href="#" class="font-bold">Narendra Modi</a>
+                                <a href="#" class="text-sm text-grey">#Prime Minister</a>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="follow-btn">Follow</button>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between hover:bg-zinc-900 pt-2 pb-2 pr-4 pl-4">
+
+                        <div class="flex items-center gap-3">
+                            <img class="profile-icon" src="images/india 5.jpg">
+
+                            <div class="flex flex-col">
+                                <a href="#" class="font-bold">PMO India</a>
+                                <a href="#" class="text-grey text-sm">#India</a>
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <button class="follow-btn">Follow</button>
+                        </div>
+                    </div>
+
+                    <div class="hover:bg-zinc-900 text-blue p-4 rounded-bl-xl rounded-br-xl">Show more</div>
+
+
+                </div>
+
+                <!-- Terms and Conditions: -->
+
+                <div class="text-sm text-grey flex flex-col">
+                    <div class="flex justify-between">
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookie Policy</a>
+                    </div>
+                    <div class="flex justify-between">
+                    <a href="#">Accessibility</a>
+                    <a href="#">Ads Info</a>
+                    <a href="#">More...</a>
+                    <a href="#">&copy; 2024 X Corp.</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+
+</body>
+
+</html>
