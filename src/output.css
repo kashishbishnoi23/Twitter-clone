@@ -604,8 +604,8 @@ video {
 }
 
 .header{
-  -webkit-backdrop-filter:blur(20px);
-          backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(60px);
+          backdrop-filter:blur(60px);
   /* adds blur effect to the bg */
 }
 
@@ -994,6 +994,10 @@ video {
 
 .pt-5 {
   padding-top: 1.25rem;
+}
+
+.pt-\[2vh\] {
+  padding-top: 2vh;
 }
 
 .text-center {

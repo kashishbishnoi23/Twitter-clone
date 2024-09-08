@@ -61,6 +61,6 @@
     }
 
     .header{
-      backdrop-filter:blur(20px); /* adds blur effect to the bg */
+      backdrop-filter:blur(60px); /* adds blur effect to the bg */
     }
 }
